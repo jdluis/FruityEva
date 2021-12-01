@@ -11,8 +11,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        textPrimary ['Ubuntu'],
-        textPrimary ['Lobster']
+        textPrimary: ['Ubuntu'],
+        textPrimary: ['Lobster']
       }
     },
   },
