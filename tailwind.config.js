@@ -18,9 +18,16 @@ module.exports = {
         },
       },
       fontFamily: {
-        textPrimary: ['Ubuntu'],
-        textPrimary: ['Lobster']
-      }
+        textPrimary: ['Sahitya'],
+        textSecondary: ['Ubuntu']
+      },
+      fontSize: {
+        h1: ['14rem']
+      },
+      backgroundImage: {
+        'hero-home': "url('https://i.giphy.com/media/XEb90OzfzTduM/giphy.webp')",
+        'orange': "url(https://i.giphy.com/media/k7K48NJ7qlko8/giphy.webp)",
+      },
     },
   },
   variants: {

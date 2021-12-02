@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<span lang="ko">
 <body class="bg-palette-five">
 
 
     <header class="grid grid-cols-3 mt-5 items-center">
         <h1 class="text-6xl text-center font-textPrimary text-palette-one">FruityEva</h1> 
+        <button class="btn"> <a href="Index2.html">BACK</a></button>
         <nav>
             <ul class="flex">
                 <li class="btn"><a class="text-xl hover:text-palette-two" href="#">Home</a></li>
@@ -24,28 +24,20 @@
                 <li class="btn"><a class="text-xl hover:text-palette-two" href="#">Contact</a></li>
             </ul>
         </nav>   
-
-            <form class="text-center font-textPrimar">
-                <label for="lang-switch">
-                    <span lang="de">Deutch</span>
-                    <span lang="en">Language</span>
-                </label>
-                <select id="lang-switch">
-                    <option value="en">English</option>
-                    <option value="de" selected>Deutch</option>
-                </select>
-            </form>                                                                                                
+        <div class="flex gap-4  justify-center">
+            <a href="#" class="hover:shadow-lg"> <img src="img/aleman.png" alt="german flag"> </a>
+            <a href="#" class="hover:shadow-lg"> <img src="img/inglaterra.png" alt="england flag"></a>
+        </div>
+                   
+         
     </header>
-                        <!-- 
-                                <p>
-                                    <span lang="ko">한국어 텍스트</span>
-                                    <span lang="en">Text in English</span>
-                                </p>
-                        -->
+        
+
+
     <!--RECIPES SECTION-->
     <section class="max-w-7xl grid grid-cols-1 gap-10 mt-20 ml-5 mr-5   sm:grid-cols-2 lg:grid-cols-3" >
         <div class="card">
-            <img src="img/pallete.png" alt="Vegan Ice Cream" class="w-full h-32 sm:h-48 object-cover max-w-lg">
+            <img src="img/recipes/1.jpeg" alt="Vegan Ice Cream" class="w-full h-32 sm:h-48 object-cover max-w-lg">
             <div class="m-4">
                 <span class="font-bold">Title recipe</span>
                 <span class="block text-gray-500 text-sm" >Lorem ipsum dolor sit pepejuan.</span>
@@ -56,7 +48,7 @@
         </div>
 
         <div class="card">
-            <img src="img/pallete.png" alt="Vegan Ice Cream" class="w-full h-32 sm:h-48 object-cover max-w-lg">
+            <img src="img/recipes/2.jpeg" alt="Vegan Ice Cream" class="w-full h-32 sm:h-48 object-cover max-w-lg">
             <div class="m-4">
                 <span class="font-bold">Title recipe</span>
                 <span class="block text-gray-500 text-sm" >Lorem ipsum dolor sit pepejuan.</span>
@@ -67,7 +59,7 @@
         </div>
 
         <div class="card">
-            <img src="img/pallete.png" alt="Vegan Ice Cream" class="w-full h-32 sm:h-48 object-cover max-w-lg">
+            <img src="img/recipes/3.jpeg" alt="Vegan Ice Cream" class="w-full h-32 sm:h-48 object-cover max-w-lg">
             <div class="m-4">
                 <span class="font-bold">Title recipe</span>
                 <span class="block text-gray-500 text-sm" >Lorem ipsum dolor sit pepejuan.</span>
@@ -77,9 +69,5 @@
             </div>
         </div>
     </section>
-</span>
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="language.js"></script>
 </body>
 </html>
