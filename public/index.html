@@ -10,50 +10,87 @@
     <!--Styles-->
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://kit.fontawesome.com/3ffbeed2f4.js" crossorigin="anonymous"></script>
+
+    <style> 
+        /*Aside Hover Nav*/
+        .ahover {border-bottom: 2px solid #f46f72 ;width: 0;transition: ease-in;}
+        .ahover:hover {width: 80%; transition-duration: 0.3s;}
+        /*textAnimate STYLES*/
+        span {opacity: 0;transition: all 4s ease;}
+        span.fade {opacity: 1;}
+    </style>
 </head>
 
 <body class=" bg-gray-50 font-textPrimary">
 
-    <div class="grid grid-cols-2 text-center">
-
-        <aside class="h-screen w-2/5 bg-palette2-one text-palette2-text col-span-1">
-            <div class="flex justify-center gap-4 p-5">
-                <i><img src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40" height="40"
+    <div class="flex flex-col sm:flex-row  md:flex-nowrap"> <!--Father Container-->
+        <!--ASIDE LEFT CONTAINER-->
+        <aside class="sm:h-screen bg-palette2-one text-palette2-text pt-5 text-center block w-96 xl:w-3/5">
+            <div class="flex justify-center pl-5 gap-4 pb-14">
+                <i class=" cursor-pointer"><img src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40" height="40"
                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
-                <i><img src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="40"
+                <i class=" cursor-pointer"><img src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="40"
                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
             </div>
-            <div class="mb-12 ">
-                <h1 class="uppercase text-6xl font-bold">Fruity Eva</h1>
+            <div class="sm:mb-12 ">
+                <h1 class="textAnimate uppercase text-6xl font-bold">Fruity Eva</h1>
                 <div class="w-2/4 h-1 border-b-2 m-auto mt-5 mb-5 border-palette2-text"></div>
-                <h2 class="pb-8 text-xl">FRUIT-BASED VEGAN</h2>
+                <h2 class="sm:pb-8 text-xl">FRUIT-BASED VEGAN</h2>
             </div>
-            <nav class="flex flex-col gap-3 text-2xl text-left w-3/4 m-auto">
-                <a class="border-b-2" href="">Home</a>
-                <a class="" href="">About</a>
-                <a class="" href="">Coaching</a>
-                <a class="" href="">Ebooks</a>
-                <a class="" href="">Shop</a>
-                <a class="" href="">Contact</a>
+            <nav class="hidden sm:flex flex-col gap-3 text-2xl text-left w-3/4 ml-auto">
+                <a class="ahover" href="">Home</a>
+                <a class="ahover" href="">About</a>
+                <a class="ahover" href="">Coaching</a>
+                <a class="ahover" href="">Ebooks</a>
+                <a class="ahover" href="">Shop</a>
+                <a class="ahover" href="">Contact</a>
             </nav>
-            <div class="social-links">
-                <i></i>
-                <i></i>
-                <i></i>
+            <div class="p-16">
+               <a class="p-4  text-palette-three hover:opacity-70" href="https://bit.ly/2Sz7PA0" target="_blank"><i class="fab fa-3x fa-instagram"></i></a> 
+               <a class="p-4 text-red-700 hover:opacity-70" href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA" target="_blank"><i class="fab fa-3x fa-youtube"></i></a> 
             </div>
         </aside>
+        <!--MAIN RIGHT CONTAINER-->
+        <div class="flex flex-col m-0 p-0 ">
+            <header>
+                <nav class="md:h-4/5 text-white font-medium lg:flex md:text-4xl text-center">
+                    <div class="sm:w-5/6 lg:w-1/4">
+                        <a class="hover:opacity-75" href="#coaching">
+                            <img class="h-96 object-cover  w-full lg:h-full" src="img/author/hi.jpg" alt="">
+                            <h3 class="block p-8 bg-palette2-six h-1/6">Coaching<h3/>
+                        </a>
+                    </div>
 
-        <div class="flex flex-col ">
-            <header class="w-full">
-                <nav class=" h-60 flex">
-                    <a class="bg-palette2-six w-1/6" href="">Coaching</a>
-                    <a class="bg-palette2-three w-1/6" href="">Ebooks</a>
-                    <a class="bg-palette2-four w-1/6" href="">Shop</a>
-                    <a class="bg-palette2-five " href="">Contact</a>
+                    <div class="sm:w-5/6 lg:w-1/4 ">
+                        <a class="hover:opacity-75" href="#ebook">
+                            <img class="h-96  object-cover  w-full lg:h-full" src="img/ebooks/ebook1.webp" alt="">
+                            <h3 class="block p-8 bg-palette2-three h-1/6">Ebooks</h3>
+                        </a>
+
+                    </div>
+
+                    <div class="sm:w-5/6 lg:w-1/4 ">
+                        <a class="hover:opacity-75" href="#shop">
+                            <img class="h-96  object-cover  w-full lg:h-full " src="img/recipes/3.jpeg" alt="">
+                            <h3 class="block p-8 bg-palette2-four h-1/6">Shop</h3>
+                        </a>
+
+                    </div>
+
+                    <div class="sm:w-5/6 lg:w-1/4">
+                        <a class="hover:opacity-75" href="#contact">
+                            <img class="h-96  object-cover w-full lg:h-full" src="img/recipes/3.jpeg" alt="">
+                            <h3 class="block p-8 bg-palette2-five h-1/6">Contact</h3>
+                        </a>
+
+                    </div>
+
                 </nav>
+
             </header>
 
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-2 mt-20">
                 <div>
                     <img src="img/author/eva-black.png" alt="eva">
                 </div>
@@ -78,6 +115,8 @@
             </div>
         </div>
     </div>
+
+    <script src="textAnimate.js"></script>
 </body>
 
 </html>
