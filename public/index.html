@@ -24,9 +24,38 @@
 
 <body class=" bg-gray-50 font-textPrimary">
 
-    <div class="flex flex-col sm:flex-row  md:flex-nowrap"> <!--Father Container-->
+    <div class="flex flex-col sm:flex-row m-auto md:flex-nowrap"> <!--Father Container-->
         <!--ASIDE LEFT CONTAINER-->
-        <aside class="sm:h-screen bg-palette2-one text-palette2-text pt-5 text-center block w-96 xl:w-3/5">
+
+        <!--Aside FOR MOBILE-->
+        <aside class="sm:h-screen hidden bg-palette2-one text-palette2-text w-full pt-5 text-center sm:block sm:w-96 xl:w-3/5">
+            <div class="flex justify-center pl-5 gap-4 pb-14">
+                <i class=" cursor-pointer"><img src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40" height="40"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
+                <i class=" cursor-pointer"><img src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="40"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
+            </div>
+            <div class="sm:mb-12 ">
+                <h1 class="textAnimate uppercase text-6xl font-bold">Fruity Eva</h1>
+                <div class="w-2/4 h-1 border-b-2 m-auto mt-5 mb-5 border-palette2-text"></div>
+                <h2 class="sm:pb-8 text-xl">FRUIT-BASED VEGAN</h2>
+            </div>
+            <nav class="hidden sm:flex flex-col gap-3 text-2xl text-left w-3/4 ml-auto">
+                <a class="ahover" href="">Home</a>
+                <a class="ahover" href="">About</a>
+                <a class="ahover" href="">Coaching</a>
+                <a class="ahover" href="">Ebooks</a>
+                <a class="ahover" href="">Shop</a>
+                <a class="ahover" href="">Contact</a>
+            </nav>
+            <div class="p-16">
+               <a class="p-4  text-palette-three hover:opacity-70" href="https://bit.ly/2Sz7PA0" target="_blank"><i class="fab fa-3x fa-instagram"></i></a> 
+               <a class="p-4 text-red-700 hover:opacity-70" href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA" target="_blank"><i class="fab fa-3x fa-youtube"></i></a> 
+            </div>
+        </aside>
+
+        <!--Aside for Small Devices and more//NOT FOR MOBILE-->
+        <aside class="sm:h-screen hidden bg-palette2-one text-palette2-text w-full pt-5 text-center sm:block sm:w-96 xl:w-3/5">
             <div class="flex justify-center pl-5 gap-4 pb-14">
                 <i class=" cursor-pointer"><img src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40" height="40"
                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
@@ -52,17 +81,17 @@
             </div>
         </aside>
         <!--MAIN RIGHT CONTAINER-->
-        <div class="flex flex-col m-0 p-0 ">
+        <div class="flex flex-col m-0 p-0 sm:w-5/6 ">
             <header>
                 <nav class="md:h-4/5 text-white font-medium lg:flex md:text-4xl text-center">
-                    <div class="sm:w-5/6 lg:w-1/4">
+                    <div class=" lg:w-1/4">
                         <a class="hover:opacity-75" href="#coaching">
                             <img class="h-96 object-cover  w-full lg:h-full" src="img/author/hi.jpg" alt="">
                             <h3 class="block p-8 bg-palette2-six h-1/6">Coaching<h3/>
                         </a>
                     </div>
 
-                    <div class="sm:w-5/6 lg:w-1/4 ">
+                    <div class=" lg:w-1/4 ">
                         <a class="hover:opacity-75" href="#ebook">
                             <img class="h-96  object-cover  w-full lg:h-full" src="img/ebooks/ebook1.webp" alt="">
                             <h3 class="block p-8 bg-palette2-three h-1/6">Ebooks</h3>
@@ -70,7 +99,7 @@
 
                     </div>
 
-                    <div class="sm:w-5/6 lg:w-1/4 ">
+                    <div class=" lg:w-1/4 ">
                         <a class="hover:opacity-75" href="#shop">
                             <img class="h-96  object-cover  w-full lg:h-full " src="img/recipes/3.jpeg" alt="">
                             <h3 class="block p-8 bg-palette2-four h-1/6">Shop</h3>
@@ -78,7 +107,7 @@
 
                     </div>
 
-                    <div class="sm:w-5/6 lg:w-1/4">
+                    <div class=" lg:w-1/4">
                         <a class="hover:opacity-75" href="#contact">
                             <img class="h-96  object-cover w-full lg:h-full" src="img/recipes/3.jpeg" alt="">
                             <h3 class="block p-8 bg-palette2-five h-1/6">Contact</h3>
