@@ -22,5 +22,5 @@
 }
 
 .cardNavH3 {
-    @apply block p-8 h-28 sm:h-1/6 sm:p-5;
+    @apply font-medium text-3xl block p-8 h-28 sm:h-1/6 sm:p-5;
 }

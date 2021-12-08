@@ -74,26 +74,26 @@
         </aside>
 
         <!--Aside for Small Devices and more//NOT FOR MOBILE-->
-        <aside class="sticky sm:h-screen hidden bg-palette2-one text-palette2-text w-full pt-5 sm:block sm:w-96 xl:w-1/4">
-            <div class="fixed text-center">
-            <div class="flex justify-center pl-5 gap-4 pb-14">
+        <aside class="sm:h-screen hidden h-screen text-palette2-text w-full  sm:block sm:w-96 xl:w-80">
+            <div class="fixed text-center bg-palette2-one ">
+            <div class="flex justify-center gap-4 pb-14 pt-6">
                 <i class=" cursor-pointer"><img src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
                         height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
                 <i class=" cursor-pointer"><img src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
                         height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
             </div>
             <div class="sm:mb-12 ">
-                <h1 class="textAnimate uppercase text-6xl font-bold">Fruity Eva</h1>
+                <h1 class="textAnimate uppercase text-5xl xl:text-5xl font-bold">Fruity Eva</h1>
                 <div class="w-2/4 h-1 border-b-2 m-auto mt-5 mb-5 border-palette2-text"></div>
                 <h2 class="sm:pb-8 text-xl">FRUIT-BASED VEGAN</h2>
             </div>
             <nav class="hidden sm:flex flex-col gap-3 text-2xl text-left w-3/4 ml-auto">
-                <a class="ahover" href="">Home</a>
+                <a class="ahover active:bg-green-700" href="#">Home</a>
                 <a class="ahover" href="#about">About</a>
-                <a class="ahover" href="">Coaching</a>
-                <a class="ahover" href="">Ebooks</a>
-                <a class="ahover" href="">Shop</a>
-                <a class="ahover" href="">Contact</a>
+                <a class="ahover" href="#">Coaching</a>
+                <a class="ahover" href="#">Ebooks</a>
+                <a class="ahover" href="#">Shop</a>
+                <a class="ahover" href="#">Contact</a>
             </nav>
             <div class="p-16">
                 <a class="p-4  text-palette-three hover:opacity-70" href="https://bit.ly/2Sz7PA0" target="_blank"><i
@@ -160,12 +160,12 @@
             </div>
             </header>
 
-            <div class="ml-10 mr-10 mt-10 border drop-shadow-lg border-palette-three p-5 newsletter flex flex-col">
-                <form class=" flex flex-col text-left" action="">
+            <div class="pl-10 pr-10 mt-10  drop-shadow-lg max-w-lg p-5 newsletter flex flex-col">
+                <form class="flex flex-col text-left ">
                     <label for="name">First Name</label>
-                    <input name="name" type="text">
+                    <input class="border border-gray-300 font-bold text-gray-500" placeholder="Eva" name="name" type="text">
                     <label for="email">Email Address</label>
-                    <input name="email" type="email">
+                    <input class="font-bold border border-gray-300 text-gray-500" placeholder="fruityeva@gmail.com" name="email" type="email">
                     <button class="btn mt-5 bg-palette2-three">Subscribe</button>
                 </form>
             </div>
