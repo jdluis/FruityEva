@@ -17,3 +17,10 @@
     @apply bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 left-0 ml-2 mt-2;
 } 
 
+.cardNavImg {
+    @apply h-56 object-cover w-full sm:h-96 lg:h-full;
+}
+
+.cardNavH3 {
+    @apply block p-8 h-28 sm:h-1/6 sm:p-5;
+}
