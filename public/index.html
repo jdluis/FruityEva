@@ -44,7 +44,7 @@
         <!--ASIDE LEFT CONTAINER-->
 
         <!--Aside FOR MOBILE-->
-        <aside class="sm:hidden  bg-palette2-one text-palette2-text w-full pt-5">
+        <aside class="sm:hidden fixed  bg-palette2-one text-palette2-text w-full pt-5">
             <div class="flex justify-between mb-4"> 
             <div class="flex flex-col ml-5 justify-start items-left">
                 <h1 class="textAnimate uppercase text-2xl">Fruity Eva</h1>
@@ -54,13 +54,13 @@
             <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
         </div>
             <div id="MobileNavContainer" class="hidden w-screen m-auto bg-gray-200 bg-transparent">
-                <nav class="flex flex-col  text-2xl m-5 text-right">
-                    <a class="ahover" href="">Home</a>
-                    <a class="ahover" href="">About</a>
-                    <a class="ahover" href="">Coaching</a>
-                    <a class="ahover" href="">Ebooks</a>
-                    <a class="ahover" href="">Shop</a>
-                    <a class="ahover" href="">Contact</a>
+                <nav class="flex flex-col  text-2xl mb-4 text-center">
+                    <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="">Home</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#about">About</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="">Coaching</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="">Ebooks</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="">Shop</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="">Contact</a>
                     <div class="flex justify-center mt-5 pl-5 gap-4 pb-14">
                         <i class=" border-2 border-gray-600 cursor-pointer"><img src="img/Flag-of-Germany.svg" aria-hidden="true" role="img"
                                 width="40" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"
@@ -74,8 +74,8 @@
         </aside>
 
         <!--Aside for Small Devices and more//NOT FOR MOBILE-->
-        <aside
-            class="sm:h-screen hidden bg-palette2-one text-palette2-text w-full pt-5 text-center sm:block sm:w-96 xl:w-1/4">
+        <aside class="sticky sm:h-screen hidden bg-palette2-one text-palette2-text w-full pt-5 sm:block sm:w-96 xl:w-1/4">
+            <div class="fixed text-center">
             <div class="flex justify-center pl-5 gap-4 pb-14">
                 <i class=" cursor-pointer"><img src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
                         height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
@@ -89,7 +89,7 @@
             </div>
             <nav class="hidden sm:flex flex-col gap-3 text-2xl text-left w-3/4 ml-auto">
                 <a class="ahover" href="">Home</a>
-                <a class="ahover" href="">About</a>
+                <a class="ahover" href="#about">About</a>
                 <a class="ahover" href="">Coaching</a>
                 <a class="ahover" href="">Ebooks</a>
                 <a class="ahover" href="">Shop</a>
@@ -102,13 +102,14 @@
                     href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA" target="_blank"><i
                         class="fab fa-3x fa-youtube"></i></a>
             </div>
+        </div>
         </aside>
 
 
         <!--MAIN RIGHT CONTAINER-->
-        <div class="flex flex-col m-0 p-0 sm:w-5/6 ">
+        <div class="flex flex-col m-0 p-0 sm:w-5/6">
             <header>
-                <nav class="md:h-4/5 text-white font-medium lg:flex md:text-4xl text-center">
+                <nav class="md:h-4/5 text-white font-medium lg:flex md:text-4xl text-center mt-28 sm:mt-0">
                     <div class=" lg:w-1/4">
                         <a class="hover:opacity-75" href="#coaching">
                             <img class="cardNavImg" src="img/author/hi.jpg" alt="">
@@ -144,27 +145,28 @@
 
             </header>
 
-            <div class="grid grid-cols-2 mt-20">
-                <div>
+            <div class="grid-cols-1 grid sm:grid-cols-2 mt-20">
+
+                <div id="about" >
                     <img src="img/author/eva-black.png" alt="eva">
                 </div>
 
-                <div class="">
-                    <h1>Hi I`m Eva</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque reprehenderit, ipsam
-                        repellendus nulla molestias blanditiis nam dolores provident repellat!</p>
+                <div class="flex flex-col mt-5 ml-10 mr-10">
+                    <h1 class="text-center text-5xl font-textSecondary ">Hi I`m Eva</h1>
+                    <h5 class=" pt-8 text-xl" >So great that you are here!</h5> 
+                    <p> <br> Can’t wait to share with you how I got glowing skin, lost weight with ease, and started to feel amazing with a fruit-based vegan lifestyle!<button class="btn" >More About Me</button></p>
                 </div>
 
             </div>
             </header>
 
-            <div class="newsletter flex flex-col">
+            <div class="ml-10 mr-10 mt-10 border drop-shadow-lg border-palette-three p-5 newsletter flex flex-col">
                 <form class=" flex flex-col text-left" action="">
                     <label for="name">First Name</label>
                     <input name="name" type="text">
                     <label for="email">Email Address</label>
                     <input name="email" type="email">
-                    <button class="btn bg-palette2-three">Subscribe</button>
+                    <button class="btn mt-5 bg-palette2-three">Subscribe</button>
                 </form>
             </div>
         </div>
