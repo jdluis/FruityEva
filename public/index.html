@@ -37,13 +37,11 @@
     </style>
 </head>
 
-<body class=" bg-gray-50 font-textPrimary">
- <!--Father Container-->
-    <div class="flex flex-col sm:flex-row m-auto md:flex-nowrap">
-        <!--ASIDE LEFT CONTAINER-->
-        <!--Aside FOR MOBILE-->
-        <aside class="sm:hidden z-50 fixed sm:h-screen bg-palette2-one text-palette2-text w-full pt-5">
-            <div class="flex justify-between mb-4">
+<body class=" bg-gray-50 font-textPrimary p-0 m-0">
+
+        <!-- FOR MOBILE-->
+        <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
+            <div class="flex justify-between mb-4 ">
                 <div class="flex flex-col ml-5 justify-start items-left">
                     <h1 class="textAnimate uppercase text-2xl">Fruity Eva</h1>
                     <div class="w-1/5 h-1 border-b-2 ml-7 border-palette2-text"></div>
@@ -52,13 +50,13 @@
                 <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
             </div>
             <div id="MobileNavContainer" class="hidden w-screen m-auto bg-gray-200 bg-transparent">
-                <nav class="flex flex-col  text-2xl mb-4 text-center">
-                    <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="">Home</a>
+                <nav class="flex flex-col pt-6  text-2xl mb-4 text-center">
+                    <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="#home">Home</a>
                     <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#about">About</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="">Coaching</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="">Ebooks</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="">Shop</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="">Contact</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#coaching">Coaching</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#ebooks">Ebooks</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#shop">Shop</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#contact">Contact</a>
                     <div class="flex justify-center mt-5 pl-5 gap-4 pb-14">
                         <i class=" border-2 border-gray-600 cursor-pointer"><img src="img/Flag-of-Germany.svg"
                                 aria-hidden="true" role="img" width="40" height="24" preserveAspectRatio="xMidYMid meet"
@@ -69,88 +67,53 @@
                     </div>
                 </nav>
             </div>
-        </aside>
-
-        <!--Aside for Small Devices and more//NOT FOR MOBILE-->
-        <aside class="z-20  hidden h-screen text-palette2-text w-full bg-palette2-one  sm:block sm:w-96 xl:w-80">
-            <div class="fixed text-center ">
-                <div class="flex justify-center gap-4 pb-14 pt-6">
-                    <i class=" cursor-pointer"><img src="img/Flag-of-Germany.svg" aria-hidden="true" role="img"
-                            width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
-                    <i class=" cursor-pointer"><img src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
-                            height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt=""></i>
-                </div>
-                <div class="sm:mb-12 sm:mr-12 lg::mr-0">
-                    <h1 class="textAnimate uppercase text-5xl font-bold">Fruity Eva</h1>
-                    <div class="w-2/4 h-1 border-b-2 m-auto mt-5 mb-5 border-palette2-text"></div>
-                    <h2 class="sm:pb-8 text-xl">FRUIT-BASED VEGAN</h2>
-                </div>
-                <nav class="hidden sm:flex flex-col gap-3 text-2xl text-left w-3/4 ml-auto">
-                    <a class="ahover active:bg-green-700" href="#">Home</a>
-                    <a class="ahover" href="#about">About</a>
-                    <a class="ahover" href="#">Ebooks</a>
-                    <a class="ahover" href="#">Coaching</a>
-                    <a class="ahover" href="#">Shop</a>
-                    <a class="ahover" href="#">Contact</a>
-                </nav>
-                <div class="p-16">
-                    <a class="p-4 text-palette-three hover:opacity-70" href="https://bit.ly/2Sz7PA0" target="_blank"><i
-                            class="bg-white p-2 rounded-full fab fa-3x fa-instagram"></i></a>
-                    <a class="p-4 text-red-700 hover:opacity-70"
-                        href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA" target="_blank"><i
-                            class="bg-white p-2 rounded-full fab fa-3x fa-youtube"></i></a>
+        </div>
+        <!--FOr other devides-->
+        <div class=" hidden sm:flex justify-around flex-row z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
+            <div class="flex justify-between mb-4 ">
+                <div class="flex flex-col ml-5 justify-start items-left">
+                    <h1 class="textAnimate uppercase text-2xl">Fruity Eva</h1>
+                    <div class="w-1/5 h-1 border-b-2 ml-7 border-palette2-text"></div>
+                    <h2 class=" text-xl">Fruit-Based Vegan</h2>
                 </div>
             </div>
-        </aside>
+            <div class="">
+                <nav class="pt-6  text-2xl mb-4 text-center">
+                    <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="#home">Home</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#about">Products</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#coaching">Free</a>
+                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#ebooks">About</a>
+                </nav>
+            </div>
+            <div class="flex justify-center mt-5 pl-5 gap-4 pb-14">
+                <label for="lenguages">Select lenguage:</label>
+
+                <select id="lenguages">
+                  <option value="volvo">English <i class="border-2 rounded-full border-gray-600 cursor-pointer"><img class="rounded-full" src="img/US-UK_Flag.svg"
+                    aria-hidden="true" role="img" width="40" height="24" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 64 64" alt=""></i></option>
+                  <option value="saab">Deutchland <img class="rounded-full" src="img/Flag-of-Germany.svg"
+                    aria-hidden="true" role="img" width="40" height="24" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 64 64" alt=""></option>
+                </select> 
+               
+              
+              
+            </div>
+        </div>
+ 
 
 
         <!--MAIN RIGHT CONTAINER-->
-        <div class="flex flex-col m-0 p-0 sm:w-5/6">
-            <header>
-                <nav class="md:h-4/5 text-white font-medium lg:flex md:text-4xl text-center mt-24 sm:mt-0">
-                    <div class=" lg:w-1/4">
-                        <a class="hover:opacity-75" href="#coaching">
-                            <img class="cardNavImg" src="img/author/hi.jpg" alt="">
-                            <h3 class="cardNavH3 bg-palette2-six">Coaching</h3>
-                        </a>
-                    </div>
-
-                    <div class=" lg:w-1/4 ">
-                        <a class="hover:opacity-75" href="#ebook">
-                            <img class="cardNavImg" src="img/ebooks/ebook1.webp" alt="">
-                            <h3 class="cardNavH3 bg-palette2-three">Ebooks</h3>
-                        </a>
-
-                    </div>
-
-                    <div class=" lg:w-1/4 ">
-                        <a class="hover:opacity-75" href="#shop">
-                            <img class="cardNavImg" src="img/recipes/fruit2.jpeg" alt="">
-                            <h3 class="cardNavH3 bg-palette2-four ">Shop</h3>
-                        </a>
-
-                    </div>
-
-                    <div class=" lg:w-1/4">
-                        <a class="hover:opacity-75" href="#contact">
-                            <img class="h-96  object-cover w-full lg:h-full" src="img/recipes/fruit.jpg" alt="">
-                            <h3 class="cardNavH3 bg-palette2-five ">Contact</h3>
-                        </a>
-
-                    </div>
-
-                </nav>
-
-            </header>
-
-            <div class="grid-cols-1 grid lg:grid-cols-2 mt-20">
+       
+            <section class="grid-cols-1 grid lg:grid-cols-2 mt-20">
 
                 <div id="about" class="max-w-lg m-auto">
                     <img class="w-full" src="img/author/eva-black.png" alt="eva">
                 </div>
 
                 <div class="flex flex-col mt-5 ml-10 mr-10">
-                    <h1 class="text-center font-textPrimary text-palette2-text font-semibold text-7xl">Hi I`m Eva</h1>
+                    <h1 class="text-left font-textPrimary text-palette2-text font-semibold text-7xl">Hi, I`m Eva</h1>
                     <h5 class=" pt-8 text-xl">So great that you are here!</h5>
                     <p> <br>  Eating vegan with lots of fruit has helped me
                         to overcome eating disorders, healthily lose weight, and gave me a purpose in life.
@@ -159,174 +122,43 @@
                         Much love to you!🌞<button class="btn">More About Me</button></p>
                 </div>
 
+            </section>
+            
+           
+     
+
+    <footer class="grid grid-cols-1 lg:grid-cols-2 bg-home2section bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl backdrop-contrast-200 self-center w-full lg:pl-20">
+        <div class="pl-10 pr-10 mt-10  drop-shadow-lg max-w-lg p-5 flex w-full m-auto flex-col">
+            <h3 class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7">Any questions? <br> Contact me</h3>
+          
+            <div class="text-center">
+                <i class="pb-8 fa-3x text-palette2-two fas fa-arrow-down"></i>
             </div>
-            </header>
-            <div class="grid grid-cols-1 lg:grid-cols-2 bg-home2section bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl  self-center w-full lg:pl-20">
-                <div class="pl-10 pr-10 mt-10  drop-shadow-lg max-w-lg p-5 flex w-full m-auto flex-col">
-                    <h3 class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7">Subscribe
-                        to my Newsletter</h3>
-                    <div class="hidden text-center  lg:inline-block">
-                        <i class="fa-3x pb-8 text-palette2-two fas fa-arrow-right"></i>
-                    </div>
-                    <div class="lg:hidden text-center">
-                        <i class="pb-8 fa-3x text-palette2-two fas fa-arrow-down"></i>
-                    </div>
+            <form class="flex flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-16">
+                <label for="name">First Name</label>
+                <input class="border border-gray-300 font-bold text-gray-500" placeholder="Eva" name="name"
+                    type="text">
+                <label for="email">Email Address</label>
+                <input class="font-bold border border-gray-300 text-gray-500" placeholder="fruityeva@gmail.com"
+                    name="email" type="email">
 
-                    <p class=" mb-5 text-center text-white text-base bg-palette2-five bg-opacity-30 font-medium">Can’t wait to share with you how I got glowing skin, lost weight with ease, and started to
-                        feel amazing with a fruit-based vegan lifestyle!</p>
+                <label for="email">Subject</label>
+                <input class="font-bold border border-gray-300 text-gray-500" placeholder="What is about your dude"
+                    name="subject" type="text">
+                <label for="notes">Message</label>
+                <textarea class="font-bold border border-gray-300 text-gray-500" name="notes" id="notes" cols="30" rows="5" placeholder="Write you Message"></textarea>
+                
 
-                </div>
+                <button class="btn mt-5 bg-palette2-three hover:bg-palette-three ">Subscribe</button>
+            </form>
 
-
-                <form class="flex flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-16">
-                    <label for="name">First Name</label>
-                    <input class="border border-gray-300 font-bold text-gray-500" placeholder="Eva" name="name"
-                        type="text">
-                    <label for="email">Email Address</label>
-                    <input class="font-bold border border-gray-300 text-gray-500" placeholder="fruityeva@gmail.com"
-                        name="email" type="email">
-                    <button class="btn mt-5 bg-palette2-three hover:bg-palette-three ">Subscribe</button>
-                </form>
-            </div>
-            <!--Ebooks-->
-            <div class="mt-10">
-                <h2 class=" text-center font-textPrimary text-palette2-text font-semibold text-7xl">Ebooks</h2>
-
-                <div
-                    class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-5">
-                    <!--Card 1-->
-                    <div class="w-full lg:max-w-full lg:flex">
-                        <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style="background-image: url('img/ebooks/ebook1.webp')" title="Forest">
-                        </div>
-                        <div
-                            class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                            <div class="mb-8">
-                                <p class="text-sm text-gray-600 flex items-center">
-                                    <svg class="fill-current text-gray-500 w-3 h-3 mr-2"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                        <path
-                                            d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-                                    </svg>
-                                    Free
-                                </p>
-                                <div class="text-gray-900 font-bold text-xl mb-2">
-                                    Raw Vegan Smoothie Recipe Ebook
-                                </div>
-                                <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem
-                                    praesentium nihil.</p>
-                            </div>
-                            <div class="flex items-center">
-                                <img class="w-10 h-10 rounded-full mr-4" src="img/author/hi.jpg" alt="Avatar of Writer">
-                                <div class="text-sm">
-                                    <p class="text-gray-900 leading-none">Eva Buchmann</p>
-
-                                </div>
-                                <div class="w-full flex justify-end">
-                                    <button class="btn bg-palette-three hover:bg-palette2-two"> Subscribe</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                     <!--Finish Card 1-->
-                    <!--Card 2-->
-                    <div class="w-full lg:max-w-full lg:flex">
-                        <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style="background-image: url('img/ebooks/ebook1.webp')" title="Forest">
-                        </div>
-                        <div
-                            class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                            <div class="mb-8">
-                                <p class="text-sm text-gray-600 flex items-center">
-                                    <svg class="fill-current text-gray-500 w-3 h-3 mr-2"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                        <path
-                                            d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-                                    </svg>
-                                    6,99 €
-                                </p>
-                                <div class="text-gray-900 font-bold text-xl mb-2">
-                                    Raw Vegan Smoothie Recipe Ebook
-                                </div>
-                                <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem
-                                    praesentium nihil.</p>
-                            </div>
-                            <div class="flex items-center">
-                                <img class="w-10 h-10 rounded-full mr-4" src="img/author/hi.jpg" alt="Avatar of Writer">
-                                <div class="text-sm">
-                                    <p class="text-gray-900 leading-none">Eva Buchmann</p>
-
-                                </div>
-                                <div class="w-full flex justify-end">
-                                    <button class="btn bg-palette-three hover:bg-palette2-two"> Go to the Shop</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                     <!--Finish Card 2-->
-                    <!--Card 3-->
-                    <div class="w-full lg:max-w-full lg:flex">
-                        <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style="background-image: url('img/ebooks/ebook1.webp')" title="Forest">
-                        </div>
-                        <div
-                            class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                            <div class="mb-8">
-                                <p class="text-sm text-gray-600 flex items-center">
-                                    <svg class="fill-current text-gray-500 w-3 h-3 mr-2"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                        <path
-                                            d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-                                    </svg>
-                                    6,99 €
-                                </p>
-                                <div class="text-gray-900 font-bold text-xl mb-2">
-                                    Raw Vegan Smoothie Recipe Ebook
-                                </div>
-                                <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem
-                                    praesentium nihil.</p>
-                            </div>
-                            <div class="flex items-center">
-                                <img class="w-10 h-10 rounded-full mr-4" src="img/author/hi.jpg" alt="Avatar of Writer">
-                                <div class="text-sm">
-                                    <p class="text-gray-900 leading-none">Eva Buchmann</p>
-
-                                </div>
-                                <div class="w-full flex justify-end">
-                                    <button class="btn bg-palette-three hover:bg-palette2-two"> Go to the Shop</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Finish Card 3-->
-                </div>
-                <!--Finish Cards Container-->
-            </div>
-             <!--Finish Ebook Section-->
-
-            <!--News Sections Start--> 
-            <div class="w-full grid grid-cols-1 sm:grid-cols-2  gap-4 pr-4 pl-4 mb-16 bg-newssection bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl  self-center lg:pl-20">
-                <div class="border m-5 border-palette2-two ">
-                    <img src="img/author/acroyoga3.jpg" alt="">
-                </div>
-               <div class="border m-5 border-palette2-two">
-                <img src="img/author/acroyoga4.jpg" alt="">
-               </div>
-            </div>
-             <!--News Sections Finish--> 
-             <!--Start Coaching Section -->
-             <div>
-                <h2 class=" text-center font-textPrimary text-palette2-text font-semibold text-7xl">Coaching</h2>
-             
-             </div>
         </div>
-        <!--Finish Right Main-->
-    </div>
+
+
+
+    </footer>
+
+    
 
     <script src="textAnimate.js"></script>
     <script src="showNav.js"></script>
