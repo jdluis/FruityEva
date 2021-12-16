@@ -34,103 +34,126 @@
         span.fade {
             opacity: 1;
         }
+
     </style>
 </head>
 
 <body class=" bg-gray-50 font-textPrimary p-0 m-0">
 
-        <!-- FOR MOBILE-->
-        <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
-            <div class="flex justify-between mb-4 ">
-                <div class="flex flex-col ml-5 justify-start items-left">
-                    <h1 class="textAnimate uppercase text-2xl">Fruity Eva</h1>
-                    <div class="w-1/5 h-1 border-b-2 ml-7 border-palette2-text"></div>
-                    <h2 class=" text-xl">Fruit-Based Vegan</h2>
-                </div>
-                <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
+    <!-- FOR MOBILE-->
+    <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
+        <div class="flex justify-between mb-4 ">
+            <div class="flex flex-col ml-5 justify-start items-left">
+                <h1 class=" uppercase text-2xl">Fruity Eva</h1>
+                <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
+                <h2 class=" text-xl">Fruit-Based Vegan</h2>
             </div>
-            <div id="MobileNavContainer" class="hidden w-screen m-auto bg-gray-200 bg-transparent">
-                <nav class="flex flex-col pt-6  text-2xl mb-4 text-center">
-                    <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="#home">Home</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#about">About</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#coaching">Coaching</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#ebooks">Ebooks</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#shop">Shop</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#contact">Contact</a>
-                    <div class="flex justify-center mt-5 pl-5 gap-4 pb-14">
-                        <i class=" border-2 border-gray-600 cursor-pointer"><img src="img/Flag-of-Germany.svg"
-                                aria-hidden="true" role="img" width="40" height="24" preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 64 64" alt=""></i>
-                        <i class="border-2 border-gray-600 cursor-pointer"><img src="img/US-UK_Flag.svg"
-                                aria-hidden="true" role="img" width="40" height="24" preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 64 64" alt=""></i>
-                    </div>
-                </nav>
+            <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
+        </div>
+        <div id="MobileNavContainer" class="hidden w-screen m-auto bg-gray-200 bg-transparent">
+            <nav class="flex flex-col pt-6  text-2xl pb-8 text-center">
+                <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="#home">Home</a>
+                <li class="cursor-pointer list-none" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
+                    <ul  id="subseccion2" class="m-auto text-lg">
+                        <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                                href="pages/coaching.html">Coaching</a></li>
+                        <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                                href="pages/ebook.html">Ebooks</a></li>
+                        <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                                href="pages/recomendation.html">Recomendations</a></li>
+                    </ul>
+                </li>
+                
+                <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#free">Free</a>
+                <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#about">About</a>
+                <div class="flex justify-center mt-5 gap-4">
+                    <img class="flags" src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+                        height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+                    <img class="flags" src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="24"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--FOr other devides-->
+    <div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
+        <div class="flex justify-center pl-5 gap-4">
+            <img class="rounded-full border" src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="30"
+                height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+            <img class="rounded-full border" src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="30"
+                height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+
+            <select class="bg-palette2-one" id="lenguages">
+                <option value="english">English</option>
+                <option value="deuthchland">Deutchland</option>
+            </select>
+        </div>
+
+        <div class="flex justify-between mb-4 ">
+            <div class="flex mt-5 flex-col justify-start items-left">
+                <a href="index.html">
+                    <h1 class="text-center uppercase text-xl md:text-2xl lg:text-4xl">Fruity Eva</h1>
+                    <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
+                    <h2 class="text-lg lg:text-xl text-center">Fruit-Based Vegan</h2>
+                </a>
             </div>
         </div>
-        <!--FOr other devides-->
-        <div class="hidden sm:flex justify-evenly flex-row z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
-            <div class="flex justify-center pl-5 gap-4">
-                <label for="lenguages"></label>
-                <img class="rounded-full border" src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="30" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-                <img class="rounded-full border" src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="30" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+        <nav class="pt-6 space-x-5 text-lg md:text-xl lg:text-2xl mb-4 text-center">
+            <ul class="flex gap-5 text-center m-auto">
+                <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                        href="index.html">Home</a></li>
+                <li class="cursor-pointer" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
+                    <ul  id="subseccion1" class="text-left absolute  text-lg bg-white">
+                        <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                                href="pages/coaching.html">Coaching</a></li>
+                        <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                                href="pages/ebook.html">Ebooks</a></li>
+                        <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                                href="pages/recomendation.html">Recomendations</a></li>
+                    </ul>
+                </li>
+                <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                        href="pages/free.html">Free</a></li>
+                <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                        href="pages/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
 
-                <select id="lenguages">
-                  <option value="english"> English</option>
-                  <option value="deuthchland">  Deutchland</option>
-                </select>   
-            </div>
 
-            <div class="flex justify-between mb-4 ">
-                <div class="flex flex-col ml-5 justify-start items-left">
-                    <h1 class="textAnimate uppercase text-2xl">Fruity Eva</h1>
-                    <div class="w-1/5 h-1 border-b-2 ml-7 border-palette2-text"></div>
-                    <h2 class=" text-xl">Fruit-Based Vegan</h2>
-                </div>
-            </div>
-            <div class="">
-                <nav class="pt-6 space-x-5 text-2xl mb-4 text-center">
-                    <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="#home">Home</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#about">Products</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#coaching">Free</a>
-                    <a class="transition w-screen hover:bg-palette-three hover:text-white" href="#ebooks">About</a>
-                </nav>
-            </div>
-   
+
+    <!--MAIN RIGHT CONTAINER-->
+
+    <section class="grid-cols-1 grid lg:grid-cols-2 mt-40">
+
+        <div id="about" class="max-w-lg m-auto">
+            <img class="w-full" src="img/author/eva-black.png" alt="eva">
         </div>
- 
+
+        <div class="flex flex-col mt-5 ml-10 mr-10">
+            <h1 class="textAnimate text-left font-textPrimary text-palette2-text font-semibold text-7xl">Hi, I`m Eva</h1>
+            <h5 class=" pt-8 text-xl">So great that you are here!</h5>
+            <p> <br> I can’t wait to share with you how I got glowing skin, lost weight with ease, and started to feel
+                amazing with a fruit-based vegan lifestyle!<button class="btn">More About Me</button></p>
+        </div>
+
+    </section>
 
 
-        <!--MAIN RIGHT CONTAINER-->
-       
-            <section class="grid-cols-1 grid lg:grid-cols-2 mt-20">
 
-                <div id="about" class="max-w-lg m-auto">
-                    <img class="w-full" src="img/author/eva-black.png" alt="eva">
-                </div>
 
-                <div class="flex flex-col mt-5 ml-10 mr-10">
-                    <h1 class="text-left font-textPrimary text-palette2-text font-semibold text-7xl">Hi, I`m Eva</h1>
-                    <h5 class=" pt-8 text-xl">So great that you are here!</h5>
-                    <p> <br>  I can’t wait to share with you how I got glowing skin, lost weight with ease, and started to feel amazing with a fruit-based vegan lifestyle!<button class="btn">More About Me</button></p>
-                </div>
-
-            </section>
-            
-           
-     
-
-    <footer class="grid grid-cols-1 lg:grid-cols-2 bg-home2section bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl backdrop-contrast-200 self-center w-full lg:pl-20">
+    <footer
+        class="grid grid-cols-1 lg:grid-cols-2 bg-home2section bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl backdrop-contrast-200 self-center w-full lg:pl-20">
         <div class="pl-10 pr-10 mt-10  drop-shadow-lg max-w-lg p-5 flex w-full m-auto flex-col">
-            <h3 class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7">Any questions? <br> Contact me</h3>
-          
+            <h3 class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7">Any questions?
+                <br> Contact me</h3>
+
             <div class="text-center">
                 <i class="pb-8 fa-3x text-palette2-two fas fa-arrow-down"></i>
             </div>
             <form class="flex flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-16">
                 <label for="name">First Name</label>
-                <input class="border border-gray-300 font-bold text-gray-500" placeholder="Eva" name="name"
-                    type="text">
+                <input class="border border-gray-300 font-bold text-gray-500" placeholder="Eva" name="name" type="text">
                 <label for="email">Email Address</label>
                 <input class="font-bold border border-gray-300 text-gray-500" placeholder="fruityeva@gmail.com"
                     name="email" type="email">
@@ -139,22 +162,35 @@
                 <input class="font-bold border border-gray-300 text-gray-500" placeholder="What is about your dude"
                     name="subject" type="text">
                 <label for="notes">Message</label>
-                <textarea class="font-bold border border-gray-300 text-gray-500" name="notes" id="notes" cols="30" rows="5" placeholder="Write you Message"></textarea>
-                
+                <textarea class="font-bold border border-gray-300 text-gray-500" name="notes" id="notes" cols="30"
+                    rows="5" placeholder="Write you Message"></textarea>
+
 
                 <button class="btn mt-5 bg-palette2-three hover:bg-palette-three ">Subscribe</button>
             </form>
 
         </div>
 
+        <div class="self-center">
+            <ul class="flex justify-evenly">
+                <li><i class="fab fa-5x fa-youtube"></i></li>
+                <li><i class="fab fa-5x fa-instagram"></i></li>
+                <li><i class="fab fa-5x fa-mailchimp"></i></li>
+                <li><i class="fab fa-5x "></i>KiT</li>
+
+            </ul>
+        </div>
+
 
 
     </footer>
 
-    
 
-    <script src="textAnimate.js"></script>
-    <script src="showNav.js"></script>
+
+    <script src="app/textAnimate.js"></script>
+    <script src="app/showNav.js"></script>
+    <script src="app/smoothScroll.js"></script>
+    <script src="app/navdrop.js"></script>
 </body>
 
 </html>
