@@ -24,3 +24,7 @@
 .cardNavH3 {
     @apply font-medium text-3xl block p-8 h-28 sm:h-1/6 sm:p-5;
 }
+
+.flags {
+    @apply hover:opacity-75  cursor-pointer rounded-full border;
+}
