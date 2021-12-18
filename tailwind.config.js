@@ -24,6 +24,15 @@ module.exports = {
           six:'#B38FB0',
           text:'#5B5E67'
         },
+        social: {
+          Facebook:'#3b5998',
+          YouTube: 	'#bb0000',
+          Twitter: 	'#55acee',
+          Linkedin:	'#007bb5',
+          Instagram: '#E1306C',
+          WhatsApp: 	'#4dc247',
+          mailchimpBg: '#FFE01B'
+        }
 
       },
       fontFamily: {
