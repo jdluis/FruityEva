@@ -47,6 +47,7 @@ module.exports = {
         'orange': "url(https://i.giphy.com/media/k7K48NJ7qlko8/giphy.webp)",
         'home2section': "url(img/bg2sec.jpg)",
         'newssection': "url(img/bgnews.jpg)",
+        'bglateralfruit': "url(img/bglateralfruit.png)",
       },
     },
   },
