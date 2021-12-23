@@ -28,3 +28,7 @@
 .flags {
     @apply hover:opacity-75  cursor-pointer rounded-full border;
 }
+
+.imgEbooks {
+    @apply object-cover w-full h-96 hover:xl:object-contain;
+}
