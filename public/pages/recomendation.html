@@ -34,13 +34,14 @@
         span.fade {
             opacity: 1;
         }
-
     </style>
+
+
 </head>
 
 <body class=" bg-gray-50 font-textPrimary p-0 m-0">
 
-    <!-- FOR MOBILE-->
+    <!-- NAV FOR MOBILE-->
     <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
         <div class="flex justify-between mb-4 ">
             <div class="flex flex-col ml-5 justify-start items-left">
@@ -54,7 +55,7 @@
             <nav class="flex flex-col pt-6  text-2xl pb-8 text-center">
                 <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="../index.html">Home</a>
                 <li class="cursor-pointer list-none" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
-                    <ul  id="subseccion2" class="m-auto text-lg">
+                    <ul id="subseccion2" class="m-auto text-lg">
                         <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
                                 href="coaching.html">Coaching</a></li>
                         <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
@@ -63,7 +64,7 @@
                                 href="recomendation.html">Recomendations</a></li>
                     </ul>
                 </li>
-                
+
                 <a class="transition w-screen hover:bg-palette-three hover:text-white" href="free.html">Free</a>
                 <a class="transition w-screen hover:bg-palette-three hover:text-white" href="about.html">About</a>
                 <div class="flex justify-center mt-5 gap-4">
@@ -75,7 +76,7 @@
             </nav>
         </div>
     </div>
-    <!--FOr other devides-->
+    <!-- NAV FOr other devides-->
     <div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
         <div class="flex justify-center pl-5 gap-4">
             <img class="rounded-full border" src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="30"
@@ -103,7 +104,7 @@
                 <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
                         href="../index.html">Home</a></li>
                 <li class="cursor-pointer" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
-                    <ul  id="subseccion1" class="text-left absolute  text-lg bg-white">
+                    <ul id="subseccion1" class="text-left absolute  text-lg bg-white">
                         <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
                                 href="coaching.html">Coaching</a></li>
                         <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
@@ -120,10 +121,30 @@
         </nav>
     </div>
 
+    <!--MAIN CONTAINER-->
+    <section class="mt-32 mb-20 m-auto">
+        <div class="rounded overflow-hidden shadow-md  relative pt-10 m-auto lg:w-2/4 border-4 pb-10">
 
+            <div class="w-3/4 max-w-lg m-auto">
+                <h3 class="text-2xl font-bold lg:text-5xl sm:text-3xl w-full text-center pb-5"> 
+                   Recommendations</h3>
+                   <p class="text-xl lg:text-2xl text-center">I share with you some of the products, food, and books that helped me to level up, create more health and wellbeing and will fast-track your success.</p>
+            </div>
 
-    <!--MAIN RIGHT CONTAINER-->
+            <div class="w-3/4 max-w-md m-auto swiper mt-10 mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="border grid grid-cols-2 gap-5 ">
+                        <img class="w-full rounded-2xl border-palette2-two shadow-2xl " src="../img/kitrecomm1.webp" alt="image" />
+                        <img class="w-full rounded-2xl border-palette2-two shadow-2xl " src="../img/kitrecomm2.webp" alt="image" />
+                    </div>
+            </div>
 
+            <div class="w-3/4 max-w-lg text-center m-auto mt-8 ">
+               <a class="hover:opacity-80 bg-palette-four pr-5 pl-5 p-2 sm:pr-10  sm:pl-10 sm:p-5 shadow-2xl rounded-3xl  border-2" target="_blank" href="https://kit.co/Fruityeva"> <button class="p-4 text-white font-bold text-3xl">Tap Here!</button></a>
+            </div>
+
+        </div>
+    </section>
 
 
 
@@ -131,47 +152,61 @@
 
     <footer class=" bg-home2section bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl backdrop-contrast-200 ">
         <div class="grid grid-cols-1 lg:grid-cols-2  self-center w-full lg:pl-20">
-        <div class="mt-10">
-        <h3 class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7">Any questions?
-            <br> Contact me</h3>
+            <div class="mt-10">
+                <h3 class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7">Any
+                    questions?
+                    <br> Contact me
+                </h3>
 
-            <div class="text-center lg:hidden">
-                <i class="pb-8 fa-3x text-palette2-two fas fa-arrow-down"></i>
+                <div class="text-center lg:hidden">
+                    <i class="pb-8 fa-3x text-palette2-two fas fa-arrow-down"></i>
+                </div>
+                <div class="text-center hidden lg:block">
+                    <i class="pb-8 fa-3x text-palette2-two fas fa-arrow-right"></i>
+                </div>
+
+                <ul class="flex gap-7 mt-2 lg:mt-10 justify-center">
+                    <li class="text-social-YouTube hover:opacity-40"><a
+                            href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA" target="_blank"><i
+                                class="fab fa-2x fa-youtube"></i></a></li>
+                    <li class="text-social-Instagram hover:opacity-40"><a href="https://www.instagram.com/fruityeva/"
+                            target="_blank"><i class="fab fa-2x fa-instagram"></i></a></li>
+                    <li class="text-black hover:opacity-40"><a href="https://mailchi.mp/a95b3196a58e/fruityeva"
+                            target="_blank"><i class="fab fa-2x fa-mailchimp"></i></a></li>
+                    <li class="items-center flex hover:opacity-40"><a href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                width="35" height="20" viewBox="0 0 45 16">
+                                <path
+                                    d="M6.562 7.312L2 11.826V1.788A.995.995 0 0 0 1 .8a.993.993 0 0 0-.999.988v12.42a.99.99 0 0 0 .998.986 1 1 0 0 0 .707-.287l5.575-5.51 5.577 5.512a1.003 1.003 0 0 0 1.413 0 .978.978 0 0 0 0-1.398l-5.575-5.51L14.27 2.49a.978.978 0 0 0 0-1.398 1.008 1.008 0 0 0-1.413 0l-6.27 6.202c-.005 0-.009.004-.012.008l-.013.012zm16.55 7.886a.993.993 0 0 1-1-.987V1.79a.994.994 0 0 1 1-.989c.55 0 .999.443.999.989v12.42a.993.993 0 0 1-1 .987zM36.718 2.779v11.432c0 .545.446.987.998.987.55 0 1-.44 1-.987V2.779h5.282A.995.995 0 0 0 45 1.791a.995.995 0 0 0-1-.989H31.434a.995.995 0 0 0-.998.989c0 .545.447.988.999.988h5.285-.001z" />
+                            </svg></a></li>
+                </ul>
             </div>
-            <div class="text-center hidden lg:block">
-                <i class="pb-8 fa-3x text-palette2-two fas fa-arrow-right"></i>
+            <div class=" mt-10  drop-shadow-lg max-w-lg p-3 flex w-full m-auto bg-palette2-six  opacity-75 flex-col">
+
+                <form action="https://formsubmit.co/e6b3ef577c5bcfc11a8313ba6473476d" method="POST" name="contact_form"
+                    class="flex flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-5">
+                    <label for="name">First Name</label>
+                    <input class="border border-gray-300 font-bold text-gray-500" required placeholder="Eva" name="name"
+                        type="text">
+                    <label for="email">Email Address</label>
+                    <input class="font-bold border border-gray-300 text-gray-500" placeholder="fruityeva@gmail.com"
+                        name="email" type="email" required>
+                    <input type="hidden" name="_next" value="https://fruityeva.com/pages/thanks.html">
+                    <label for="email">Subject</label>
+                    <input class="font-bold border border-gray-300 text-gray-500" placeholder="What is about your dude"
+                        name="_subject" type="text">
+                    <input type="hidden" name="_autoresponse"
+                        value="Thanks for contact me, i will respond you soon us posible.">
+                    <label for="message">Message</label>
+                    <textarea class="font-bold border border-gray-300 text-gray-500" required name="message"
+                        id="message" cols="30" rows="5" placeholder="Write you Message"></textarea>
+
+                    <input class="btn mt-5 bg-palette2-three hover:bg-palette-three" type="submit"
+                        value="Submit Message">
+                </form>
+
+
             </div>
-
-            <ul class="flex gap-7 mt-2 lg:mt-10 justify-center">
-                <li class="text-social-YouTube hover:opacity-40"><a href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA" target="_blank"><i class="fab fa-2x fa-youtube"></i></a></li>
-                <li class="text-social-Instagram hover:opacity-40"><a href="https://www.instagram.com/fruityeva/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a></li>
-                <li class="text-black hover:opacity-40"><a href="https://mailchi.mp/a95b3196a58e/fruityeva" target="_blank"><i class="fab fa-2x fa-mailchimp"></i></a></li>
-                <li class="items-center flex hover:opacity-40"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="35" height="20" viewBox="0 0 45 16"><path d="M6.562 7.312L2 11.826V1.788A.995.995 0 0 0 1 .8a.993.993 0 0 0-.999.988v12.42a.99.99 0 0 0 .998.986 1 1 0 0 0 .707-.287l5.575-5.51 5.577 5.512a1.003 1.003 0 0 0 1.413 0 .978.978 0 0 0 0-1.398l-5.575-5.51L14.27 2.49a.978.978 0 0 0 0-1.398 1.008 1.008 0 0 0-1.413 0l-6.27 6.202c-.005 0-.009.004-.012.008l-.013.012zm16.55 7.886a.993.993 0 0 1-1-.987V1.79a.994.994 0 0 1 1-.989c.55 0 .999.443.999.989v12.42a.993.993 0 0 1-1 .987zM36.718 2.779v11.432c0 .545.446.987.998.987.55 0 1-.44 1-.987V2.779h5.282A.995.995 0 0 0 45 1.791a.995.995 0 0 0-1-.989H31.434a.995.995 0 0 0-.998.989c0 .545.447.988.999.988h5.285-.001z"/></svg></a></li>
-            </ul>
         </div>
-        <div class=" mt-10  drop-shadow-lg max-w-lg p-3 flex w-full m-auto bg-palette2-six  opacity-75 flex-col">
-          
-            <form action="https://formsubmit.co/e6b3ef577c5bcfc11a8313ba6473476d" method="POST" name="contact_form" class="flex flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-5">
-                <label for="name">First Name</label>
-                <input class="border border-gray-300 font-bold text-gray-500" required placeholder="Eva" name="name" type="text">
-                <label for="email">Email Address</label>
-                <input class="font-bold border border-gray-300 text-gray-500" placeholder="fruityeva@gmail.com"
-                    name="email" type="email" required>
-                    <input type="hidden" name="_next" value="https://fruityeva.com/pages/thanks.html"> 
-                <label for="email">Subject</label>
-                <input class="font-bold border border-gray-300 text-gray-500" placeholder="What is about your dude"
-                    name="_subject" type="text">
-                    <input type="hidden" name="_autoresponse" value="Thanks for contact me, i will respond you soon us posible.">
-                <label for="message">Message</label>
-                <textarea class="font-bold border border-gray-300 text-gray-500" required name="message" id="message" cols="30"
-                    rows="5" placeholder="Write you Message"></textarea>
-
-                <input class="btn mt-5 bg-palette2-three hover:bg-palette-three" type="submit" value="Submit Message">
-            </form>
-
-
-        </div>
-    </div>
         <div>
             <h4 class="text-center font-bold"><a href="http//www.jdluis.com">Copyright jdeluis.com</a></h4>
         </div>
@@ -185,7 +220,7 @@
     <script src="../app/showNav.js"></script>
     <script src="../app/smoothScroll.js"></script>
     <script src="../app/navdrop.js"></script>
-      <!--SCRIPTS, JS---finish-->
+    <!--SCRIPTS, JS---finish-->
 </body>
 
 </html>
