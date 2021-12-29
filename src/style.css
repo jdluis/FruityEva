@@ -30,5 +30,5 @@
 }
 
 .imgEbooks {
-    @apply object-cover w-full h-96 xl:object-contain;
+    @apply object-contain w-full h-96;
 }
