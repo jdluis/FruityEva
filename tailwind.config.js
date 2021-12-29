@@ -43,11 +43,8 @@ module.exports = {
         h1: ['12.5rem']
       },
       backgroundImage: {
-        'hero-home': "url('https://i.giphy.com/media/XEb90OzfzTduM/giphy.webp')",
-        'orange': "url(https://i.giphy.com/media/k7K48NJ7qlko8/giphy.webp)",
         'home2section': "url(img/bg2sec.jpg)",
         'newssection': "url(img/bgnews.jpg)",
-        'bglateralfruit': "url(img/bglateralfruit.png)",
       },
     },
   },

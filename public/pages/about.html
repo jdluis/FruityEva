@@ -44,9 +44,11 @@
       <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
         <div class="flex justify-between mb-4 ">
             <div class="flex flex-col ml-5 justify-start items-left">
+                <a href="../index.html">
                 <h1 class=" uppercase text-2xl">Fruity Eva</h1>
                 <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
                 <h2 class=" text-xl">Fruit-Based Vegan</h2>
+                </a>
             </div>
             <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
         </div>
@@ -78,11 +80,15 @@
     <!--FOr other devides-->
     <div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
         <div class="flex justify-center pl-5 gap-4">
-            <img class="rounded-full border" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="30"
-                height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-            <img class="rounded-full border" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="30"
-                height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-        </div>
+            <button class="hover:opacity-40">
+              <img class="rounded-full border" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
+              height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+            </button> 
+            <button class="hover:opacity-40">
+              <img class="rounded-full border" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+              height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+            </button>
+          </div>
 
         <div class="flex justify-between mb-4 ">
             <div class="flex mt-5 flex-col justify-start items-left">
@@ -123,7 +129,7 @@
         <img class="w-full m-auto border shadow-2xl" src="../img/author/nice.jpg" alt="">
     </div>
 
-    <div class="mt-20 lg:ml-10 w-full lg:w-4/6 ml-auto mr-auto">
+    <div class="lg:mt-20 lg:ml-10 w-full lg:w-4/6 ml-auto mr-auto">
         <h2 class="pt-20 text-5xl font-bold border-b-2 w-5/6 2xl:3/6 border-palette2-three mb-6">About Me</h2>
         <h4  class=" text-palette2-text text-center text-2xl">"If you want to create the life you are dreaming of; you are at the perfect place!".</h4> <br>
         <p>It was not long ago that I was feeling miserable, dealing with eating disorders and body dysmorphia.
@@ -156,7 +162,7 @@
         
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-5/6 lg:w-4/6 m-auto text-cente">
             <div class="hidden lg:block m-auto lg:w-5/6 text-center p-5 self-end">
-                <img class="border-2 shadow-2xl w-full" src="../img/recipes/fruit2.jpeg" alt="">
+                <img class="border-2 shadow-2xl w-full" src="../img/aboutFruit.jpeg" alt="">
             </div>
         <ul class="flex border shadow-xl m-1 border-palette2-three flex-col gap-2 text-left text-xl p-5 mb-5 leading-5 mt-10">
             <h3 class="text-3xl pb-10 underline">5 Facts About Me</h3>
@@ -226,8 +232,16 @@
         </form>
     </div>
 </div>
-    <div>
-        <h4 class="mt-5 text-center font-bold"><a href="http//www.jdluis.com">Copyright jdeluis.com</a></h4>
+
+
+    <div class="flex flex-wrap justify-evenly mt-5 text-center gap-2 overflow-hidden font-bold bg-black opacity-70">
+        <div class="pl-2 lg:pl-0 flex gap-16  text-palette2 font-extrabold  text-white">
+           <a href="../pdf/DISCLAIMER.pdf">Disclamer</a>
+           <a href="../pdf/PRIVACY POLICY AGREEMENT.pdf">Privacy policy agreement</a>
+           <a href="../pdf/Terms and conditions .pdf">Terms and conditions</a>
+        </div>
+   
+        <h4 class="hover:opacity-70 text-white"><a href="http//www.jdluis.com">Copyright @ 2021 - jdluis.com</a></h4>
     </div>
 
 

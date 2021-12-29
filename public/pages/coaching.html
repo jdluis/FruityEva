@@ -45,9 +45,11 @@
     <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
         <div class="flex justify-between mb-4 ">
             <div class="flex flex-col ml-5 justify-start items-left">
-                <h1 class=" uppercase text-2xl">Fruity Eva</h1>
-                <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
-                <h2 class=" text-xl">Fruit-Based Vegan</h2>
+                <a href="../index.html">
+                    <h1 class=" uppercase text-2xl">Fruity Eva</h1>
+                    <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
+                    <h2 class=" text-xl">Fruit-Based Vegan</h2>
+                    </a>
             </div>
             <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
         </div>
@@ -78,16 +80,16 @@
     </div>
     <!-- NAV FOr other devides-->
     <div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
-        <div class="flex justify-center pl-5 gap-4">
-            <img class="rounded-full border" src="img/US-UK_Flag.svg" aria-hidden="true" role="img" width="30"
-                height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-            <img class="rounded-full border" src="img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="30"
-                height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-
-            <select class="bg-palette2-one" id="lenguages">
-                <option value="english">English</option>
-                <option value="deuthchland">Deutchland</option>
-            </select>
+            <div class="flex justify-center pl-5 gap-4">
+          <button class="hover:opacity-40">
+            <img class="rounded-full border" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
+            height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+          </button> 
+          <button class="hover:opacity-40">
+            <img class="rounded-full border" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+            height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
+          </button>
+           
         </div>
 
         <div class="flex justify-between mb-4 ">
@@ -198,9 +200,15 @@
             </form>
         </div>
     </div>
-        <div>
-            <h4 class="mt-5 text-center font-bold"><a href="http//www.jdluis.com">Copyright jdeluis.com</a></h4>
+    <div class="flex flex-wrap justify-evenly mt-5 text-center gap-2 overflow-hidden font-bold bg-black opacity-70">
+        <div class="pl-2 lg:pl-0 flex gap-16  text-palette2 font-extrabold  text-white">
+           <a href="../pdf/DISCLAIMER.pdf">Disclamer</a>
+           <a href="../pdf/PRIVACY POLICY AGREEMENT.pdf">Privacy policy agreement</a>
+           <a href="../pdf/Terms and conditions .pdf">Terms and conditions</a>
         </div>
+   
+        <h4 class="hover:opacity-70 text-white"><a href="http//www.jdluis.com">Copyright @ 2021 - jdluis.com</a></h4>
+    </div>
 
 
     </footer>
