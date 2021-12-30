@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="../style.css">
 
     <script src="https://kit.fontawesome.com/3ffbeed2f4.js" crossorigin="anonymous"></script>
+    <!--  Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <style>
         /*Aside Hover Nav*/
@@ -51,11 +53,11 @@
 
 <body class=" bg-gray-50 font-textPrimary p-0 m-0">
 
-    <!-- NAV FOR MOBILE-->
-    <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
+      <!-- FOR MOBILE-->
+      <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
         <div class="flex justify-between mb-4 ">
-            <div class="flex flex-col ml-5 justify-start items-left">
-                <a href="../index.html">
+            <div class="flex pt-2 flex-col ml-5 justify-start items-left">
+                <a href="http://www.fruityeva.com/public">
                     <h1 class=" uppercase text-2xl">Fruity Eva</h1>
                     <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
                     <h2 class=" text-xl">Fruit-Based Vegan</h2>
@@ -65,9 +67,9 @@
         </div>
         <div id="MobileNavContainer" class="hidden w-screen m-auto bg-gray-200 bg-transparent">
             <nav class="flex flex-col pt-6  text-2xl pb-8 text-center">
-                <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="../index.html">Home</a>
+                <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="http://www.fruityeva.com/public">Home</a>
                 <li class="cursor-pointer list-none" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
-                    <ul id="subseccion2" class="m-auto text-lg">
+                    <ul  id="subseccion2" class="m-auto text-lg">
                         <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
                                 href="coaching.html">Coaching</a></li>
                         <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
@@ -76,35 +78,36 @@
                                 href="recomendation.html">Recomendations</a></li>
                     </ul>
                 </li>
-
+                
                 <a class="transition w-screen hover:bg-palette-three hover:text-white" href="free.html">Free</a>
-                <a class="transition w-screen hover:bg-palette-three hover:text-white" href="about.html">About</a>
+                <a class="transition w-screen hover:bg-palette-three hover:text-white" href="index.html">About</a>
                 <div class="flex justify-center mt-5 gap-4">
-                    <img class="flags" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
-                        height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-                    <img class="flags" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="24"
-                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- NAV FOr other devides-->
-    <div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
-        <div class="flex justify-center pl-5 gap-4">
-            <button class="hover:opacity-40">
-              <img class="rounded-full border" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
-              height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-            </button> 
-            <button class="hover:opacity-40">
-              <img class="rounded-full border" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
-              height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="">
-            </button>
-             
-          </div>
+                    <a href="../de/home.html"> <img class="flags" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+                     height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="Flag-of-Germany"></a> 
+                     <a href="http://www.fruityeva.com/public">   <img class="flags" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="24"
+                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="US-UK-Flag"></a>
+                  
+                 </div>
+             </nav>
+         </div>
+     </div>
+     <!--FOr other devides-->
+     <div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
+         <div class="flex justify-center items-center pl-5 gap-4">
+           <a href="http://www.fruityeva.com/public" class="hover:opacity-40">
+             <img class="rounded-full border" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
+             height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="US-UK-Flag">
+           </a> 
+           <a href="../de/home.html" class="hover:opacity-40">
+             <img class="rounded-full border" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+             height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="Flag-of-Germany">
+           </a>
+            
+         </div>
 
         <div class="flex justify-between mb-4 ">
             <div class="flex mt-5 flex-col justify-start items-left">
-                <a href="../index.html">
+                <a href="http://www.fruityeva.com">
                     <h1 class="text-center uppercase text-xl md:text-2xl lg:text-4xl">Fruity Eva</h1>
                     <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
                     <h2 class="text-lg lg:text-xl text-center">Fruit-Based Vegan</h2>
@@ -114,9 +117,9 @@
         <nav class="pt-6 space-x-5 text-lg md:text-xl lg:text-2xl mb-4 text-center">
             <ul class="flex gap-5 text-center m-auto">
                 <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-                        href="../index.html">Home</a></li>
+                        href="http://www.fruityeva.com">Home</a></li>
                 <li class="cursor-pointer" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
-                    <ul id="subseccion1" class="text-left absolute  text-lg bg-white">
+                    <ul  id="subseccion1" class="text-left absolute  text-lg bg-white">
                         <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
                                 href="coaching.html">Coaching</a></li>
                         <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
@@ -133,31 +136,87 @@
         </nav>
     </div>
 
+
     <!--MAIN CONTAINER-->
     <section class="mt-32 mb-20 m-auto">
         <div class="rounded overflow-hidden shadow-md  relative pt-10 m-auto lg:w-2/4 border-4 pb-10">
 
             <div class="w-3/4 max-w-lg m-auto">
-                <h3 class="text-2xl font-bold lg:text-5xl sm:text-3xl w-full text-center pb-5"> 
-                   Recommendations</h3>
-                   <p class="text-xl lg:text-2xl text-center">I share with you some of the products, food, and books that helped me to level up, create more health and wellbeing and will fast-track your success.</p>
+                <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5">Let's stay connected and receive the ebook <b>"Fruit-based Mealplan" for FREE.</b> 
+                  </h3>
             </div>
 
-            <div class="w-3/4 max-w-md m-auto swiper mt-10 mySwiper">
+            <div class="w-3/4 max-w-md m-auto swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="border grid grid-cols-2 gap-5 ">
-                        <img class="w-full rounded-2xl border-palette2-two shadow-2xl " src="../img/kitrecomm1.webp" alt="image" />
-                        <img class="w-full rounded-2xl border-palette2-two shadow-2xl " src="../img/kitrecomm2.webp" alt="image" />
+                    <div class="swiper-slide">
+                        <img class="imgEbooks"
+                            src="../img/ebooks/English Erweiterte Version vom Meal plan/1.png" alt="Ebook-Meal plan" />
                     </div>
+                    <div class="swiper-slide">
+                        <img class="imgEbooks"
+                            src="../img/ebooks/English Erweiterte Version vom Meal plan/3.png" alt="Ebook-Meal plan" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgEbooks"
+                            src="../img/ebooks/English Erweiterte Version vom Meal plan/9.png" alt="Ebook-Meal plan" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="imgEbooks"
+                            src="../img/ebooks/English Erweiterte Version vom Meal plan/49.png" alt="Ebook-Meal plan" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="imgEbooks"
+                            src="../img/ebooks/English Erweiterte Version vom Meal plan/83.png" alt="Ebook-Meal plan" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
             <div class="w-3/4 max-w-lg text-center m-auto mt-8 ">
-               <a class="hover:opacity-80 bg-palette-four pr-5 pl-5 p-2 sm:pr-10  sm:pl-10 sm:p-5 shadow-2xl rounded-3xl  border-2" target="_blank" href="https://kit.co/Fruityeva"> <button class="p-4 text-white font-bold text-3xl">Tap Here!</button></a>
+              <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://gmail.us20.list-manage.com/subscribe/post?u=f473d8aca18a8005a4dd8b9a5&amp;id=4bcd4c297f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f473d8aca18a8005a4dd8b9a5_4bcd4c297f" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/hRddxv" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
             </div>
 
         </div>
     </section>
-
 
 
 
@@ -225,11 +284,23 @@
 
     </footer>
 
+
     <!--SCRIPTS, JS---start---->
     <script src="../app/textAnimate.js"></script>
     <script src="../app/showNav.js"></script>
     <script src="../app/smoothScroll.js"></script>
     <script src="../app/navdrop.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
     <!--SCRIPTS, JS---finish-->
 </body>
 
