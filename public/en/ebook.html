@@ -53,89 +53,82 @@
 <body class=" bg-gray-50 font-textPrimary p-0 m-0">
 
 
-      <!-- FOR MOBILE-->
-      <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
-        <div class="flex justify-between mb-4 ">
-            <div class="flex pt-2 flex-col ml-5 justify-start items-left">
-                <a href="http://www.fruityeva.com/public">
-                    <h1 class=" uppercase text-2xl">Fruity Eva</h1>
-                    <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
-                    <h2 class=" text-xl">Fruit-Based Vegan</h2>
-                    </a>
-            </div>
-            <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
+   <!-- FOR MOBILE-->
+   <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
+    <div class="flex justify-between mb-4 ">
+        <div class="flex pt-2 flex-col ml-5 justify-start items-left">
+            <a href="http://www.fruityeva.com">
+                <img class="w-full" style="max-width: 280px;" src="../img/logo.png" alt="logo fruityeva">
+             </a>
         </div>
-        <div id="MobileNavContainer" class="hidden w-screen m-auto bg-gray-200 bg-transparent">
-            <nav class="flex flex-col pt-6  text-2xl pb-8 text-center">
-                <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="http://www.fruityeva.com/public">Home</a>
-                <li class="cursor-pointer list-none" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
-                    <ul  id="subseccion2" class="m-auto text-lg">
-                        <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
-                                href="coaching.html">Coaching</a></li>
-                        <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
-                                href="ebook.html">Ebooks</a></li>
-                        <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
-                                href="recomendation.html">Recomendations</a></li>
-                    </ul>
-                </li>
-                
-                <a class="transition w-screen hover:bg-palette-three hover:text-white" href="free.html">Free</a>
-                <a class="transition w-screen hover:bg-palette-three hover:text-white" href="index.html">About</a>
-                <div class="flex justify-center mt-5 gap-4">
-                    <a href="../de/home.html"> <img class="flags" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
-                     height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="Flag-of-Germany"></a> 
-                     <a href="http://www.fruityeva.com/public">   <img class="flags" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="24"
-                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="US-UK-Flag"></a>
-                  
-                 </div>
-             </nav>
-         </div>
-     </div>
-     <!--FOr other devides-->
-     <div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
-         <div class="flex justify-center items-center pl-5 gap-4">
-           <a href="http://www.fruityeva.com/public" class="hover:opacity-40">
-             <img class="rounded-full border" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
-             height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="US-UK-Flag">
-           </a> 
-           <a href="../de/home.html" class="hover:opacity-40">
-             <img class="rounded-full border" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
-             height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="Flag-of-Germany">
-           </a>
+        <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
+    </div>
+    <div id="MobileNavContainer" class="hidden w-screen m-auto bg-gray-200 bg-transparent">
+        <nav class="flex flex-col pt-6  text-2xl pb-8 text-center">
+            <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="http://www.fruityeva.com/public">Home</a>
+            <li class="cursor-pointer list-none" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
+                <ul  id="subseccion2" class="m-auto text-lg">
+                    <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                            href="coaching.html">Coaching</a></li>
+                    <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                            href="ebook.html">Ebooks</a></li>
+                    <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                            href="recomendation.html">Recomendation</a></li>
+                </ul>
+            </li>
             
-         </div>
-
-        <div class="flex justify-between mb-4 ">
-            <div class="flex mt-5 flex-col justify-start items-left">
-                <a href="http://www.fruityeva.com">
-                    <h1 class="text-center uppercase text-xl md:text-2xl lg:text-4xl">Fruity Eva</h1>
-                    <div class="w-2/5 h-1 border-b-2 m-auto border-palette2-text"></div>
-                    <h2 class="text-lg lg:text-xl text-center">Fruit-Based Vegan</h2>
-                </a>
+            <a class="transition w-screen hover:bg-palette-three hover:text-white" href="free.html">Free</a>
+            <a class="transition w-screen hover:bg-palette-three hover:text-white" href="about.html">About</a>
+            <div class="flex justify-center mt-5 gap-4">
+               <a href="../de/home.html"> <img class="flags" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+                height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="Flag-of-Germany"></a> 
+                <a href="http://www.fruityeva.com/public">   <img class="flags" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="24"
+                preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="US-UK-Flag"></a>
+             
             </div>
-        </div>
-        <nav class="pt-6 space-x-5 text-lg md:text-xl lg:text-2xl mb-4 text-center">
-            <ul class="flex gap-5 text-center m-auto">
-                <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-                        href="http://www.fruityeva.com">Home</a></li>
-                <li class="cursor-pointer" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
-                    <ul  id="subseccion1" class="text-left absolute  text-lg bg-white">
-                        <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-                                href="coaching.html">Coaching</a></li>
-                        <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-                                href="ebook.html">Ebooks</a></li>
-                        <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-                                href="recomendation.html">Recomendations</a></li>
-                    </ul>
-                </li>
-                <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-                        href="free.html">Free</a></li>
-                <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-                        href="about.html">About</a></li>
-            </ul>
         </nav>
     </div>
+</div>
+<!--FOr other devides-->
+<div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
+    <div class="flex justify-center items-center pl-5 gap-4">
+      <a href="http://www.fruityeva.com/public" class="hover:opacity-40">
+        <img class="rounded-full border" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
+        height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="US-UK-Flag">
+      </a> 
+      <a href="de/home.html" class="hover:opacity-40">
+        <img class="rounded-full border" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+        height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="Flag-of-Germany">
+      </a>
+       
+    </div>
 
+    <div class="flex items-center justify-center ">
+            <a  class=" 2xl:w-full sm:w-4/6 md:w-5/6" href="http://www.fruityeva.com">
+               <img class="w-full" style="max-width: 380px;" src="../img/logo.png" alt="logo fruityeva">
+            </a>
+    </div>
+    <nav class="pt-6 sm:mr-3 xl:mr-0 space-x-5 text-lg md:text-xl lg:text-2xl mb-4 text-center">
+        <ul class="flex sm:gap-3 lg:gap-5 text-center m-auto">
+            <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                    href="http://www.fruityeva.com">Home</a></li>
+            <li class="cursor-pointer" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
+                <ul  id="subseccion1" class="text-left absolute  text-lg bg-white">
+                    <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                            href="coaching.html">Coaching</a></li>
+                    <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                            href="ebook.html">Ebooks</a></li>
+                    <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                            href="recomendation.html">Recomendation</a></li>
+                </ul>
+            </li>
+            <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                    href="free.html">Free</a></li>
+            <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                    href="about.html">About</a></li>
+        </ul>
+    </nav>
+</div>
 
 
 
@@ -199,7 +192,7 @@
             <div class="w-3/4 max-w-lg m-auto">
                 <div class="text-center text-lg pt-5 pb-5 text-gray-600">
                     <h3>Favourite Raw Vegan Recipes</h3>
-                    <p>6,99 €</p>
+                    <p>9,99 €</p>
                   </div>
             </div>
 
